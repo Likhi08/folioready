@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FolioReady helps anyone build a polished portfolio without coding.">
+  <title>FolioReady — Your portfolio, ready</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=8">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <section id="landing" class="landing">
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="FolioReady home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M9 7h18a4 4 0 0 1 4 4v22H13a4 4 0 0 1-4-4V7Z"/>
+          <path d="M14 13h12M14 19h9M14 25h7"/>
+          <path d="m26 27 3 3 6-7"/>
+        </svg>
+        <span>Folio<span>Ready</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <button class="link-button privacy-open" type="button">Privacy</button>
+      </nav>
+      <button class="button button-small start-builder" type="button">Build My Portfolio</button>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Your story. Your style. Your portfolio—ready.</p>
+          <h1>Create a portfolio that <em>gets you noticed.</em></h1>
+          <p class="hero-text">Choose your style, add your details, and publish a professional portfolio in minutes—no coding required.</p>
+          <div class="hero-actions">
+            <button class="button start-builder" type="button">Build My Portfolio <span aria-hidden="true">→</span></button>
+            <a class="text-link" href="#how">See how it works</a>
+          </div>
+          <ul class="trust-list" aria-label="Product benefits">
+            <li>No coding</li><li>Live preview</li><li>Local draft saving</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-label="Example portfolio builder preview">
+          <div class="preview-window">
+            <div class="window-bar"><i></i><i></i><i></i><span>Live portfolio preview</span></div>
+            <div class="demo-profile">
+              <div class="demo-avatar">FR</div>
+              <div><small>WELCOME, I'M</small><h2>Your Name</h2><p>Designer · Developer · Creator</p></div>
+            </div>
+            <div class="demo-lines"><span></span><span></span><span></span></div>
+            <div class="demo-cards"><i></i><i></i><i></i></div>
+          </div>
+          <span class="floating-chip chip-one">Live preview</span>
+          <span class="floating-chip chip-two">6 guided steps</span>
+        </div>
+      </section>
+
+      <section id="how" class="marketing-section">
+        <p class="eyebrow centered">Simple by design</p>
+        <h2>From blank page to polished portfolio.</h2>
+        <div class="three-grid">
+          <article><span>01</span><h3>Choose your direction</h3><p>Select a portfolio type, template and visual style that feels like you.</p></article>
+          <article><span>02</span><h3>Add your story</h3><p>Enter your details, skills and projects with guidance at every step.</p></article>
+          <article><span>03</span><h3>Preview and share</h3><p>Check desktop and mobile layouts, then generate your portfolio link.</p></article>
+        </div>
+      </section>
+
+      <section id="features" class="marketing-section feature-section">
+        <div>
+          <p class="eyebrow">Built for confidence</p>
+          <h2>A professional result without the technical work.</h2>
+          <p>FolioReady combines thoughtful templates with a guided workflow, so your work—not the website setup—stays in focus.</p>
+        </div>
+        <ul class="feature-list">
+          <li><b>Flexible styles</b><span>Six portfolio categories and three adaptable templates.</span></li>
+          <li><b>Instant feedback</b><span>A live preview updates as you build.</span></li>
+          <li><b>Your draft, your device</b><span>Non-sensitive draft content stays in local browser storage.</span></li>
+          <li><b>Accessible by default</b><span>Clear labels, keyboard support and visible focus states.</span></li>
+        </ul>
+      </section>
+
+      <section class="final-cta">
+        <p class="eyebrow centered">Ready when you are</p>
+        <h2>Your next opportunity deserves a strong first impression.</h2>
+        <button class="button start-builder" type="button">Build My Portfolio <span aria-hidden="true">→</span></button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><a class="brand brand-light" href="#"><span>Folio<span>Ready</span></span></a><p>Your story. Your style. Your portfolio—ready.</p></div>
+      <button class="link-button privacy-open" type="button">Privacy</button>
+      <p>© <span class="current-year"></span> FolioReady</p>
+    </footer>
+  </section>
+
+  <section id="builder" class="builder" hidden>
+    <header class="builder-header">
+      <button id="back-home" class="icon-button" type="button" aria-label="Return to home">←</button>
+      <a class="brand" href="#" aria-label="FolioReady builder">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M9 7h18a4 4 0 0 1 4 4v22H13a4 4 0 0 1-4-4V7Z"/><path d="M14 13h12M14 19h9M14 25h7"/><path d="m26 27 3 3 6-7"/></svg>
+        <span>Folio<span>Ready</span></span>
+      </a>
+      <div class="builder-header-actions">
+        <span id="save-state" class="save-state" aria-live="polite">Draft not saved</span>
+        <button id="save-draft" class="button button-secondary button-small" type="button">Save draft</button>
+        <button id="open-preview" class="button button-small" type="button">Preview</button>
+      </div>
+    </header>
+
+    <div class="builder-shell">
+      <aside class="step-sidebar" aria-label="Portfolio builder progress">
+        <div class="progress-copy"><span>YOUR PROGRESS</span><strong id="progress-percent">17%</strong></div>
+        <div class="progress-track"><span id="progress-fill"></span></div>
+        <ol id="step-list">
+          <li><button class="step active" data-step="1" type="button"><span>1</span><b>Portfolio Type</b><small>Choose your direction</small></button></li>
+          <li><button class="step" data-step="2" type="button"><span>2</span><b>Theme</b><small>Choose a visual mood</small></button></li>
+          <li><button class="step" data-step="3" type="button"><span>3</span><b>Appearance</b><small>Personalise the look</small></button></li>
+          <li><button class="step" data-step="4" type="button"><span>4</span><b>Personal Details</b><small>Tell your story</small></button></li>
+          <li><button class="step" data-step="5" type="button"><span>5</span><b>Skills and Projects</b><small>Show your work</small></button></li>
+          <li><button class="step" data-step="6" type="button"><span>6</span><b>Preview and Publish</b><small>Review and share</small></button></li>
+        </ol>
+      </aside>
+
+      <main class="builder-main">
+        <div id="status-banner" class="status-banner" role="status" aria-live="polite" hidden></div>
+
+        <section class="form-step active" data-panel="1">
+          <p class="eyebrow">Step 1 of 6</p>
+          <h1>What kind of portfolio are you creating?</h1>
+          <p class="step-intro">Choose the direction that best matches your goals. You can change this later.</p>
+          <div id="type-options" class="option-grid type-grid" role="radiogroup" aria-label="Portfolio type">
+            <button class="choice selected" data-value="professional" role="radio" aria-checked="true" type="button"><span>◆</span><b>Professional</b><small>Career-focused and polished</small></button>
+            <button class="choice" data-value="personal" role="radio" aria-checked="false" type="button"><span>☺</span><b>Personal</b><small>Your story and interests</small></button>
+            <button class="choice" data-value="student" role="radio" aria-checked="false" type="button"><span>⌂</span><b>Student</b><small>Education and potential</small></button>
+            <button class="choice" data-value="creative" role="radio" aria-checked="false" type="button"><span>✦</span><b>Creative</b><small>Visual and expressive work</small></button>
+            <button class="choice" data-value="developer" role="radio" aria-checked="false" type="button"><span>&lt;/&gt;</span><b>Developer</b><small>Code, products and impact</small></button>
+            <button class="choice" data-value="freelancer" role="radio" aria-checked="false" type="button"><span>↗</span><b>Freelancer</b><small>Services and client results</small></button>
+          </div>
+        </section>
+
+        <section class="form-step" data-panel="2" hidden>
+          <p class="eyebrow">Step 2 of 6</p>
+          <h1>Choose a visual theme.</h1>
+          <p class="step-intro">Every option uses the same complete portfolio structure. Only the visual mood changes.</p>
+          <div id="theme-options" class="option-grid template-grid" role="radiogroup" aria-label="Portfolio theme">
+            <button class="template-choice" data-value="minimal" role="radio" aria-checked="false" type="button"><span class="template-demo minimal-demo"><i></i><i></i><i></i></span><b>Clean Light</b><small>Bright, spacious and professional</small></button>
+            <button class="template-choice" data-value="bold" role="radio" aria-checked="false" type="button"><span class="template-demo bold-demo"><i></i><i></i><i></i></span><b>Deep Navy</b><small>Confident, focused and premium</small></button>
+            <button class="template-choice" data-value="editorial" role="radio" aria-checked="false" type="button"><span class="template-demo editorial-demo"><i></i><i></i><i></i></span><b>Warm Editorial</b><small>Refined, calm and story-led</small></button>
+            <button class="template-choice featured-template" data-value="spotlight" role="radio" aria-checked="false" type="button"><span class="template-badge">Featured · Light</span><span class="template-demo spotlight-demo"><i></i><i></i><i></i></span><b>Soft Spotlight</b><small>Expressive, welcoming and polished</small></button>
+            <button class="template-choice selected featured-template" data-value="tech" role="radio" aria-checked="true" type="button"><span class="template-badge">Featured · Dark</span><span class="template-demo tech-demo"><i></i><i></i><i></i><b>&lt;/&gt;</b></span><b>Tech Console</b><small>Futuristic, technical and high-impact</small></button>
+          </div>
+        </section>
+
+        <section class="form-step" data-panel="3" hidden>
+          <p class="eyebrow">Step 3 of 6</p>
+          <h1>Make it feel like yours.</h1>
+          <p class="step-intro">Choose an accent colour and corner style. Contrast is checked in the preview.</p>
+          <fieldset><legend>Accent colour</legend>
+            <div id="colour-options" class="colour-row">
+              <button class="colour selected" data-value="#1677ff" style="--swatch:#1677ff" type="button" aria-label="Electric blue" aria-pressed="true"></button>
+              <button class="colour" data-value="#7657e8" style="--swatch:#7657e8" type="button" aria-label="Purple" aria-pressed="false"></button>
+              <button class="colour" data-value="#e5487f" style="--swatch:#e5487f" type="button" aria-label="Rose" aria-pressed="false"></button>
+              <button class="colour" data-value="#087f5b" style="--swatch:#087f5b" type="button" aria-label="Emerald" aria-pressed="false"></button>
+              <label class="custom-colour">Custom <input id="custom-colour" type="color" value="#1677ff" aria-label="Custom accent colour"></label>
+            </div>
+          </fieldset>
+          <fieldset><legend>Corner style</legend>
+            <div id="radius-options" class="segmented" role="radiogroup" aria-label="Corner style">
+              <button data-value="4" role="radio" aria-checked="false" type="button">Sharp</button>
+              <button class="selected" data-value="16" role="radio" aria-checked="true" type="button">Soft</button>
+              <button data-value="28" role="radio" aria-checked="false" type="button">Rounded</button>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="form-step" data-panel="4" hidden>
+          <p class="eyebrow">Step 4 of 6</p>
+          <h1>Add your personal details.</h1>
+          <p class="step-intro">Fields marked * are required. Only add contact details you are comfortable publishing.</p>
+          <div class="upload-box">
+            <div><b>Upload a résumé <span class="optional">Optional</span></b><p>PDF, DOC or DOCX · maximum 5 MB. The file is validated but not stored in this prototype.</p></div>
+            <label class="button button-secondary button-small" for="resume-file">Choose file</label>
+            <input id="resume-file" type="file" accept=".pdf,.doc,.docx" hidden>
+            <span id="resume-name" aria-live="polite">No file selected</span>
+          </div>
+          <div class="upload-box image-upload-box">
+            <div class="image-upload-copy"><b>Upload a profile image <span class="optional">Optional</span></b><p>JPG, PNG or WebP · maximum 5 MB. A square image works best.</p></div>
+            <div id="profile-image-preview" class="upload-preview" aria-hidden="true">YN</div>
+            <label class="button button-secondary button-small" for="profile-image-file">Choose image</label>
+            <input id="profile-image-file" type="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" hidden>
+            <span id="profile-image-name" aria-live="polite">No image selected</span>
+          </div>
+          <form id="details-form" novalidate>
+            <div class="form-grid">
+              <label>Full name *<input id="full-name" name="fullName" autocomplete="name" required maxlength="70" placeholder="e.g. Jordan Lee"><span class="field-error" id="full-name-error"></span></label>
+              <label>Professional title *<input id="role" name="role" required maxlength="80" placeholder="e.g. Product Designer"><span class="field-error" id="role-error"></span></label>
+              <label>Location<input id="location" name="location" autocomplete="address-level2" maxlength="80" placeholder="City, Country"><span class="field-error" id="location-error"></span></label>
+              <label>Email *<input id="email" name="email" type="email" autocomplete="email" required maxlength="120" placeholder="you@example.com"><span class="field-error" id="email-error"></span></label>
+              <label>Phone<input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="+00 000 000 000"><span class="field-error" id="phone-error"></span></label>
+              <label>LinkedIn URL<input id="linkedin" name="linkedin" type="url" maxlength="200" placeholder="https://linkedin.com/in/username"><span class="field-error" id="linkedin-error"></span></label>
+              <label class="full-field">Website URL<input id="website" name="website" type="url" maxlength="200" placeholder="https://yourwebsite.com"><span class="field-error" id="website-error"></span></label>
+              <label class="full-field">Professional summary *<textarea id="bio" name="bio" required minlength="30" maxlength="500" rows="5" placeholder="Describe what you do, who you help and the value you create."></textarea><span class="field-meta"><span class="field-error" id="bio-error"></span><span id="bio-count">0 / 500</span></span></label>
+            </div>
+          </form>
+        </section>
+
+        <section class="form-step" data-panel="5" hidden>
+          <p class="eyebrow">Step 5 of 6</p>
+          <h1>Add your portfolio content.</h1>
+          <p class="step-intro">Complete each section you want to display. Use the shortcuts below to move directly to an editor.</p>
+          <nav class="content-jump" aria-label="Content editor shortcuts">
+            <button type="button" data-scroll-editor="skills-editor">Skills</button>
+            <button type="button" data-scroll-editor="projects-editor">Projects</button>
+            <button type="button" data-scroll-editor="services-editor">Services</button>
+            <button type="button" data-scroll-editor="experience-editor">Experience</button>
+            <button type="button" data-scroll-editor="education-editor">Education</button>
+            <button type="button" data-scroll-editor="certifications-editor">Certifications</button>
+          </nav>
+          <div class="editor-card" id="skills-editor">
+            <div class="editor-heading"><div><h2>Skills</h2><p>Add up to 20 skills. Press Enter after each one.</p></div><span id="skill-count">0 / 20</span></div>
+            <label class="sr-only" for="skill-input">New skill</label>
+            <input id="skill-input" maxlength="40" placeholder="Type a skill and press Enter">
+            <div id="skills-list" class="tag-list"><p class="empty-state">No skills yet. Add the tools or strengths you want to highlight.</p></div>
+            <span class="field-error" id="skills-error"></span>
+          </div>
+          <div class="editor-card" id="projects-editor">
+            <div class="editor-heading"><div><h2>Projects</h2><p>Add up to three strong examples. Use results where possible.</p></div><button id="add-project" class="button button-secondary button-small" type="button">+ Add project</button></div>
+            <div id="projects-list"><p class="empty-state">No projects yet. Add a project to show your work and its impact.</p></div>
+            <span class="field-error" id="projects-error"></span>
+          </div>
+          <div class="editor-card" id="services-editor">
+            <div class="editor-heading"><div><h2>Services</h2><p>Add up to six things you can help clients or teams with.</p></div><span id="service-count">0 / 6</span></div>
+            <label class="sr-only" for="service-input">New service</label>
+            <input id="service-input" maxlength="60" placeholder="Type a service and press Enter">
+            <div id="services-list" class="tag-list"><p class="empty-state">No services yet. Add what you can offer.</p></div>
+          </div>
+          <div class="editor-card" id="experience-editor">
+            <div class="editor-heading"><div><h2>Experience</h2><p>Create a timeline of roles, internships or freelance work.</p></div><button id="add-experience" class="button button-secondary button-small" type="button">+ Add experience</button></div>
+            <div id="experience-list"><p class="empty-state">No experience entries yet.</p></div>
+          </div>
+          <div class="editor-card" id="education-editor">
+            <div class="editor-heading"><div><h2>Education</h2><p>Add degrees, schools and relevant academic context.</p></div><button id="add-education" class="button button-secondary button-small" type="button">+ Add education</button></div>
+            <div id="education-list"><p class="empty-state">No education entries yet.</p></div>
+          </div>
+          <div class="editor-card" id="certifications-editor">
+            <div class="editor-heading"><div><h2>Certifications</h2><p>Add relevant certificates or continued-learning achievements.</p></div><button id="add-certification" class="button button-secondary button-small" type="button">+ Add certification</button></div>
+            <div id="certifications-list"><p class="empty-state">No certifications yet.</p></div>
+          </div>
+          <span class="field-error" id="extended-work-error"></span>
+          <fieldset class="editor-card"><legend>Optional portfolio sections</legend>
+            <div class="toggle-list">
+              <label><span><b>About</b><small>Your professional summary</small></span><input type="checkbox" data-section="about" checked></label>
+              <label><span><b>Contact</b><small>Your public contact links</small></span><input type="checkbox" data-section="contact" checked></label>
+              <label><span><b>Skills</b><small>Your selected capabilities</small></span><input type="checkbox" data-section="skills" checked></label>
+              <label><span><b>Projects</b><small>Your featured work</small></span><input type="checkbox" data-section="projects" checked></label>
+              <label><span><b>Services</b><small>What you offer</small></span><input type="checkbox" data-section="services" checked></label>
+              <label><span><b>Experience</b><small>Your professional timeline</small></span><input type="checkbox" data-section="experience" checked></label>
+              <label><span><b>Education</b><small>Your academic background</small></span><input type="checkbox" data-section="education" checked></label>
+              <label><span><b>Certifications</b><small>Your continued learning</small></span><input type="checkbox" data-section="certifications" checked></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="form-step" data-panel="6" hidden>
+          <p class="eyebrow">Step 6 of 6</p>
+          <h1>Preview, check and publish.</h1>
+          <p class="step-intro">Review both screen sizes before generating your prototype share link.</p>
+          <div class="review-card">
+            <span>✓</span><div><h2>Your portfolio checklist</h2><p id="review-summary">Complete the required details and add at least one skill.</p></div>
+          </div>
+          <label>Portfolio URL name
+            <div class="slug-field"><span>folioready.local/</span><input id="portfolio-slug" maxlength="40" pattern="[a-z0-9-]+" placeholder="your-name"></div>
+            <small>Use lowercase letters, numbers and hyphens.</small>
+            <span class="field-error" id="slug-error"></span>
+          </label>
+          <div class="prototype-note"><b>Prototype publishing</b><p>This version creates a temporary URL containing your portfolio data. It is not permanently stored and requires a backend before production use.</p></div>
+          <button id="publish" class="button publish-button" type="button">Generate prototype link</button>
+          <div id="publish-loading" class="loading-state" hidden><span></span> Preparing your portfolio…</div>
+          <div id="share-result" class="share-result" hidden>
+            <label for="share-url">Prototype share URL</label>
+            <div><input id="share-url" readonly><button id="copy-link" class="button button-small" type="button">Copy</button></div>
+            <p>This link is a prototype and is not backed by permanent database storage.</p>
+          </div>
+        </section>
+
+        <footer class="builder-footer">
+          <button id="previous-step" class="button button-secondary" type="button">← Back</button>
+          <button id="next-step" class="button" type="button">Continue →</button>
+        </footer>
+      </main>
+
+      <aside class="live-preview">
+        <div class="preview-toolbar"><b>Live preview</b><div class="segmented compact"><button class="preview-size selected" data-size="desktop" type="button">Desktop</button><button class="preview-size" data-size="mobile" type="button">Mobile</button></div></div>
+        <div id="preview-frame-wrap" class="preview-frame-wrap"><iframe id="preview-frame" title="Live portfolio preview"></iframe></div>
+      </aside>
+    </div>
+  </section>
+
+  <div id="preview-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="preview-title" hidden>
+    <div class="modal-card preview-modal-card">
+      <div class="modal-heading"><div><p class="eyebrow">Portfolio preview</p><h2 id="preview-title">Review your work</h2></div><button id="close-preview" class="icon-button" type="button" aria-label="Close preview">×</button></div>
+      <iframe id="modal-preview-frame" title="Full portfolio preview"></iframe>
+    </div>
+  </div>
+
+  <dialog id="privacy-dialog">
+    <div class="modal-heading"><h2>Privacy in this prototype</h2><button class="privacy-close icon-button" type="button" aria-label="Close privacy information">×</button></div>
+    <p>Drafts are saved only in this browser. FolioReady excludes email, phone number, social URLs and uploaded résumé information from automatic local draft storage.</p>
+    <p>Prototype share links encode the details you choose to publish directly in the URL. Do not use sensitive information.</p>
+    <button class="privacy-close button" type="button">I understand</button>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="app.js?v=8"></script>
+</body>
+</html>
